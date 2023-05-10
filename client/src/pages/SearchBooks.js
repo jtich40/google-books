@@ -88,6 +88,14 @@ const SearchBooks = () => {
     }
   };
 
+    if (loading) {
+    return <h2>LOADING...</h2>;
+  }
+
+  if (error) {
+    return <h2>ERROR!</h2>
+  }
+
   return (
     <>
       <div className="text-light bg-dark p-5">
