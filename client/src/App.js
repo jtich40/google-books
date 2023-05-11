@@ -12,10 +12,11 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+// create connection to backend server's graphql endpoint
 const httpLink = createHttpLink({
   uri: 'graphql'
 })
-
+// set up request middleware to attach token to every request as authorization header
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
 
@@ -26,7 +27,7 @@ const authLink = setContext((_, { headers }) => {
     }
   }
 })
-
+// create new instance of apollo client with authLink middleware
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache()
