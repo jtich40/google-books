@@ -40,6 +40,7 @@ Once you have logged in, the menu will update with the following options:
 *  Logout
 
 You can search for books and will have the option to add them to your list of saved books.
+
 ![image](https://github.com/jtich40/google-books/assets/116316302/5225f690-4bbc-43d1-ad4f-6bc2b6638f5c)
 
 When you click the See Your Books option, you will find all of your saved books and related data. You can delete a book from your list at any time.
@@ -56,4 +57,3 @@ Starter code was provided by [Xandromus](https://github.com/coding-boot-camp/cau
 ## Questions
 
 For any questions, please contact me at jared.tichacek@gmail.com. Feel free to check out more of my projects at [jtich40](https://github.com/jtich40)!
-
